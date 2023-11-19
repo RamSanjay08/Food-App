@@ -16,9 +16,9 @@ const Navbar = () => {
   return (
     <section className="max-w-[1640px] max-auto flex justify-between items-center p-4">
       {/*^Left Side */}
-      <div className="flex items-center">
-        <div className="cursor-pointer">
-          <AiOutlineMenu size={30} onClick={() => setShowBar(!showBar)}/>
+      <div className="flex items-center justify-center">
+        <div className="cursor-pointer mt-1">
+          <AiOutlineMenu size={30} onClick={() => setShowBar(!showBar)} />
         </div>
         <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2">
           Best <span className="font-bold">Eats</span>
@@ -31,7 +31,7 @@ const Navbar = () => {
 
       {/* search input */}
       <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
-        <AiOutlineSearch size={25} />
+        <AiOutlineSearch size={25}/>
         <input
           className="bg-gray-200 bg-trasparent p-2 w-full focus:outline-none rounded-full"
           type="text"
