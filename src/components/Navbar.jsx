@@ -31,7 +31,7 @@ const Navbar = () => {
 
       {/* search input */}
       <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
-        <AiOutlineSearch size={25}/>
+        <AiOutlineSearch size={25} />
         <input
           className="bg-gray-200 bg-trasparent p-2 w-full focus:outline-none rounded-full"
           type="text"
@@ -49,7 +49,9 @@ const Navbar = () => {
       {/* Overlay */}
       {showBar ? (
         <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
-      ) : ("")}
+      ) : (
+        ""
+      )}
 
       {/* Side drawer menu */}
       <div
